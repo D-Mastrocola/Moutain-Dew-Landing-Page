@@ -1,0 +1,175 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+
+/* Header*/
+
+#header {
+    width: 100%;
+    height: 100px;
+    background: #07703c;
+    position: fixed;
+}
+
+#header-img {
+    height: 90%;
+    width: auto;
+    display: inline;
+}
+
+#nav-bar {
+    height: 100%;
+    width: 50%;
+    display: inline;
+    float: right;
+}
+
+#nav-links {
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-links li {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* Main */
+
+main {
+    text-align: center;
+    width: 100%;
+}
+
+#form-container {
+    padding: 120px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email {
+    height: 40px;
+    width: 250px;
+}
+
+#submit {
+    height: 30px;
+    width: 150px;
+    border: none;
+    margin: 10px 0;
+    background-color: #94c93d;
+    font-size: 16px;
+    font-family: "Baloo Chettan", cursive;
+    text-transform: uppercase;
+}
+
+#video-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#video-container iframe {
+    width: 60%;
+    max-height: 683px;
+    min-height: 300px;
+}
+
+#prod-title {
+    margin-top: 100px;
+}
+
+#products {
+    display: flex;
+    align-items: center;
+}
+
+.prod-sub {
+    width: 33%;
+    padding: 0 200px;
+}
+
+.prod-sub h3 {
+    font-size: 20px;
+}
+
+.prod-sub img {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    #nav-links {
+        background: #07703c;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-link {
+        margin: 10px 0;
+        width: 100%;
+        background: #07703c;
+        text-align: center;
+    }
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #header-img {
+        display: block;
+    }
+    #nav-bar {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    #prod-title {
+        font-size: 20px;
+    }
+    #products {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .prod-sub h3 {
+        font-size: 16px;
+        width: 100%;
+    }
+    h1 {
+        padding-top: 100px;
+    }
+    #video-container iframe {
+        height: 100%;
+    }
+}
